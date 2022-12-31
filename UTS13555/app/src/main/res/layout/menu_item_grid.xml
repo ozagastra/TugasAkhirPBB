@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp"
+    android:focusable="true"
+    android:id="@+id/item_brg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_image_brg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ban"
+            android:contentDescription="brg"/>
+
+        <TextView
+            android:id="@+id/tv_kode_brg"
+            android:textColor="#2d2d2d"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="kode"/>
+
+        <TextView
+            android:id="@+id/tv_nama_brg"
+            android:textColor="#2d2d2d"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="2"
+            android:text="nama barang"/>
+
+        <TextView
+            android:id="@+id/tv_satuan_brg"
+            android:layout_marginBottom="8dp"
+            android:textColor="#2d2d2d"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="satuan"/>
+
+        <TextView
+            android:id="@+id/tv_harga_brg"
+            android:layout_marginBottom="8dp"
+            android:textColor="#2d2d2d"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="harga"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_brg"
+            android:layout_marginBottom="8dp"
+            android:textColor="#2d2d2d"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="jumlah barang"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
